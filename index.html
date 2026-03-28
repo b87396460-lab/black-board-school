@@ -535,8 +535,10 @@
         </div>
     </footer>
 
+    <!-- Load API Config first (creates window.api) -->
+    <script defer src="./frontend/src/apiConfig.js"></script>
     <script>
-        document.getElementById('admissionForm').addEventListener('submit', function (e) {
+        document.getElementById('admissionForm').addEventListener('submit', async function (e) {
             e.preventDefault();
 
             const submitBtn = document.getElementById('submitBtn');
