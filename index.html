@@ -289,7 +289,7 @@
                     <div class="portal-icon"><i class="fas fa-user-graduate"></i></div>
                     <h3>Student Portal</h3>
                     <p>Grades, attendance, assignments</p>
-                    <a href="#" class="portal-btn">Login</a>
+                    <a href="#" class="portal-btn" onclick="window.app.handlePortalLogin('student')">Login</a>
                 </div>
                 <div class="portal-card parent-portal">
                     <div class="portal-icon"><i class="fas fa-users"></i></div>
@@ -537,6 +537,7 @@
 
     <!-- Load API Config first (creates window.api) -->
     <script defer src="./frontend/src/apiConfig.js"></script>
+    <script defer src="./frontend/src/app.js"></script>
     <script>
         document.getElementById('admissionForm').addEventListener('submit', async function (e) {
             e.preventDefault();
